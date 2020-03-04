@@ -1,0 +1,33 @@
+body {
+    background-color: #fafafa;
+    margin: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.App {
+    
+}
+
+.divider {
+    height: 50px;
+}
+
+h4 {
+    margin: 0;;
+}
+
+p {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

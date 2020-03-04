@@ -1,0 +1,41 @@
+.aboutMe {
+    
+    background-color: #fafafa;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    text-align: left;  
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.flexBoi {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.flexBoi div {
+    padding: 20px;
+}
+
+.unflexBoi div {
+    padding-top: 20px;
+}
+
+.unflexBoi {
+    width: 90%;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.link {
+    color: teal;
+    text-decoration: underline;
+}

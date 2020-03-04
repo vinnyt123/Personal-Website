@@ -1,0 +1,13 @@
+.appHeader {
+    width: 15%;
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+}
+
+.appHeader a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+}
