@@ -1,0 +1,38 @@
+.iconsWrapper {
+    display: flex;
+    width: 80%;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconsWrapper > * {
+    flex: 1 1;
+}
+
+.textAndIcon {
+    text-align: center;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.textAndIcon p{
+    margin: 0;
+}
+
+.italicsBoi {
+    font-style: italic;
+    font-size: 24px;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

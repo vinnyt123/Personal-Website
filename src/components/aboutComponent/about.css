@@ -11,7 +11,8 @@
 
 .wrapper {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .flexBoi {
@@ -22,10 +23,7 @@
 
 .flexBoi div {
     padding: 20px;
-}
-
-.unflexBoi div {
-    padding-top: 20px;
+    padding-top: 0;
 }
 
 .unflexBoi {
@@ -36,6 +34,6 @@
 }
 
 .link {
-    color: teal;
+    color: rgba(14,85,183,1);
     text-decoration: underline;
 }

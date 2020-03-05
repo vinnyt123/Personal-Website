@@ -12,10 +12,12 @@ function About() {
   if (windowWidth < 850) {
     layout = "unflexBoi";
     noMargin = {margin: 0};
-    bottomPad = {paddingBottom: 20}
+    bottomPad = {paddingBottom: 15, paddingTop: 15};
   }
   return (
     <div className="wrapper">
+
+      <p className="italicsBoi">I'm a young software engineer</p>
       
       <div className={layout}>
         <div className="aboutMe">

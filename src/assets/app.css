@@ -3,6 +3,11 @@ body {
     margin: 0;
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
 }
 
 a {
