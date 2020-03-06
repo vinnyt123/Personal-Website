@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-first-app/static/css/main.0f8fd5d4.chunk.css",
-    "main.js": "/my-first-app/static/js/main.e0910450.chunk.js",
-    "main.js.map": "/my-first-app/static/js/main.e0910450.chunk.js.map",
-    "runtime~main.js": "/my-first-app/static/js/runtime~main.73687222.js",
-    "runtime~main.js.map": "/my-first-app/static/js/runtime~main.73687222.js.map",
-    "static/js/2.f47be0c0.chunk.js": "/my-first-app/static/js/2.f47be0c0.chunk.js",
-    "static/js/2.f47be0c0.chunk.js.map": "/my-first-app/static/js/2.f47be0c0.chunk.js.map",
-    "index.html": "/my-first-app/index.html",
-    "precache-manifest.8f935abaf3329b7f8f12a3412882b84b.js": "/my-first-app/precache-manifest.8f935abaf3329b7f8f12a3412882b84b.js",
-    "service-worker.js": "/my-first-app/service-worker.js",
-    "static/css/main.0f8fd5d4.chunk.css.map": "/my-first-app/static/css/main.0f8fd5d4.chunk.css.map",
-    "static/media/imageCarousel.css": "/my-first-app/static/media/Lobster-Regular.9406d0ab.ttf"
+    "main.css": "/Personal-Website/static/css/main.bc889914.chunk.css",
+    "main.js": "/Personal-Website/static/js/main.26f611cb.chunk.js",
+    "main.js.map": "/Personal-Website/static/js/main.26f611cb.chunk.js.map",
+    "runtime~main.js": "/Personal-Website/static/js/runtime~main.b615a709.js",
+    "runtime~main.js.map": "/Personal-Website/static/js/runtime~main.b615a709.js.map",
+    "static/js/2.4d21fa20.chunk.js": "/Personal-Website/static/js/2.4d21fa20.chunk.js",
+    "static/js/2.4d21fa20.chunk.js.map": "/Personal-Website/static/js/2.4d21fa20.chunk.js.map",
+    "index.html": "/Personal-Website/index.html",
+    "precache-manifest.7fc42ef7af396983560adfcd866140d9.js": "/Personal-Website/precache-manifest.7fc42ef7af396983560adfcd866140d9.js",
+    "service-worker.js": "/Personal-Website/service-worker.js",
+    "static/css/main.bc889914.chunk.css.map": "/Personal-Website/static/css/main.bc889914.chunk.css.map",
+    "static/media/imageCarousel.css": "/Personal-Website/static/media/Lobster-Regular.9406d0ab.ttf"
   }
 }
