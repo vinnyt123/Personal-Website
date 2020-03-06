@@ -1,6 +1,7 @@
 import React from 'react';
 import useWindowDimensions from '../../index.js'
 
+
 //Includes
 import './contact.css';
 import MdMail from 'react-ionicons/lib/MdMail'
@@ -33,18 +34,26 @@ function Contact() {
                 </div>
 
                 <div className="iconsWrapper" style={{marginBottom: 15}}>
-                    <div className="textAndIcon">
-                        <IosDocument fontSize="120px" color="rgba(14,85,183,1)" />
-                    </div>
-                    <div className="textAndIcon">
-                        <LogoGithub fontSize="120px" color="rgba(14,85,183,1)"/>
-                    </div>
-                    <div className="textAndIcon">
-                        <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
-                    </div>
-                    <div className="textAndIcon">
-                        <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
-                    </div>    
+                    <a href="https://github.com/vinnyt123" target="_blank">
+                        <div className="textAndIcon">
+                            <IosDocument fontSize="120px" color="rgba(14,85,183,1)" />
+                        </div>
+                    </a>
+                    <a href="https://github.com/vinnyt123" target="_blank">
+                        <div className="textAndIcon">
+                            <LogoGithub fontSize="120px" color="rgba(14,85,183,1)"/>
+                        </div>
+                    </a>
+                    <a href="mailto:vinny.tunnell@gmail.com">
+                        <div className="textAndIcon">
+                            <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank">
+                        <div className="textAndIcon">
+                            <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
+                        </div>   
+                    </a> 
                 </div>
             </div>
             
@@ -64,12 +73,16 @@ function Contact() {
                 </div>
 
                 <div className="iconsWrapper">
-                    <div className="textAndIcon">
-                        <IosDocument fontSize="120px" color="rgba(14,85,183,1)" />
-                    </div>
-                    <div className="textAndIcon">
-                        <LogoGithub fontSize="120px" color="rgba(14,85,183,1)"/>
-                    </div>
+                    <a href="https://github.com/vinnyt123" target="_blank">
+                        <div className="textAndIcon">
+                            <IosDocument fontSize="120px" color="rgba(14,85,183,1)" />
+                        </div>
+                    </a>
+                    <a href="https://github.com/vinnyt123" target="_blank">
+                        <div className="textAndIcon">
+                            <LogoGithub fontSize="120px" color="rgba(14,85,183,1)"/>
+                        </div>
+                    </a>
                 </div>
 
                 <div className="iconsWrapper" style={{marginTop: 15}}>
@@ -82,12 +95,16 @@ function Contact() {
                 </div>
                 
                 <div className="iconsWrapper" style={{marginBottom: 15}}>
-                    <div className="textAndIcon">
-                        <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
-                    </div>
-                    <div className="textAndIcon">
-                        <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
-                    </div> 
+                    <a href="mailto:vinny.tunnell@gmail.com">
+                        <div className="textAndIcon">
+                            <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank">
+                        <div className="textAndIcon">
+                            <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
+                        </div>   
+                    </a>
                 </div>
             </div>
             

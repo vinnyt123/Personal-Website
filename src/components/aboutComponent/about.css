@@ -37,3 +37,7 @@
     color: rgba(14,85,183,1);
     text-decoration: underline;
 }
+
+.line {
+    width: 80%;
+}
