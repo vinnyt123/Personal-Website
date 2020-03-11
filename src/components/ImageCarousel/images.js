@@ -1,9 +1,12 @@
+import Dreamscapes1 from './images/Dreamscapes/1.png';
+import Dreamscapes2 from './images/Dreamscapes/2.png';
+
 function imageLoader() {
     var dreamscapesPath = './images/Dreamscapes/';
     var nameSayerPath = './images/NameSayer/';
     var tweetoPath = './images/Tweeto/';
   
-    var dreamscapesImages = Array.from(new Array(7),(val,index)=> dreamscapesPath + (index + 1) + ".png" );
+    var dreamscapesImages = [Dreamscapes1, Dreamscapes2];
     var nameSayerImages = Array.from(new Array(8),(val,index)=> nameSayerPath + (index + 1) + ".jpg" );
     var tweetoImages = Array.from(new Array(4),(val,index)=> tweetoPath + (index + 1) + ".PNG" );;
   

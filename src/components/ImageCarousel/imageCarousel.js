@@ -5,6 +5,8 @@ import React, { useState, useEffect, useRef } from 'react'
 //Includes
 import './imageCarousel.css';
 
+
+
 //Image imports
 import imageLoader from './images'
 
@@ -81,7 +83,7 @@ function ImageCarousel(props) {
         index={index}
       >
         {images.map(image => (
-          <GalleryImage objectFit="contain" key={image} src={image} />
+            <GalleryImage objectFit="contain" key={image} src={image} />
         ))
         
         }
