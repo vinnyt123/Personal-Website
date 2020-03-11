@@ -1,17 +1,29 @@
+//DREAMSCAPES
 import Dreamscapes1 from './images/Dreamscapes/1.png';
 import Dreamscapes2 from './images/Dreamscapes/2.png';
+import Dreamscapes3 from './images/Dreamscapes/3.png';
+import Dreamscapes6 from './images/Dreamscapes/6.png';
+import Dreamscapes7 from './images/Dreamscapes/7.png';
+
+//NameSayer
+import NameSayer1 from './images/NameSayer/1.png';
+import NameSayer2 from './images/NameSayer/2.png';
+import NameSayer3 from './images/NameSayer/3.png';
+
+//Tweeto
+import Tweeto1 from './images/Tweeto/1.png';
+import Tweeto2 from './images/Tweeto/2.png';
+import Tweeto3 from './images/Tweeto/3.png';
+import Tweeto4 from './images/Tweeto/4.png';
 
 function imageLoader() {
-    var dreamscapesPath = './images/Dreamscapes/';
-    var nameSayerPath = './images/NameSayer/';
-    var tweetoPath = './images/Tweeto/';
   
-    var dreamscapesImages = [Dreamscapes1, Dreamscapes2];
-    var nameSayerImages = Array.from(new Array(8),(val,index)=> nameSayerPath + (index + 1) + ".jpg" );
-    var tweetoImages = Array.from(new Array(4),(val,index)=> tweetoPath + (index + 1) + ".PNG" );;
+    var dreamscapesImages = [Dreamscapes1, Dreamscapes2, Dreamscapes3, Dreamscapes6, Dreamscapes7];
+    var nameSayerImages = [NameSayer1, NameSayer2, NameSayer3];
+    var tweetoImages = [Tweeto1, Tweeto2, Tweeto3, Tweeto4];
   
     var tweetoTxt = "Tweeto is a social media application created using the CherryPy web framework for Python3 along with jinja2 for page \
-     templating, and PyNacl for encryption of private messages. MySQL was used for data management. HTML, CSS, and \
+     templating, and PyNacl for encryption of private messages MySQL was used for data management. HTML, CSS, and \
      Javascript/JQuery were also used for creation of the UI and Ajax refreshing.";
   
     var nameSayerTxt = "Namesayer is a JavaFX application used to practice pronunciation of unfamiliar names. \
