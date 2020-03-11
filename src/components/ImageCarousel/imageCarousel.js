@@ -5,6 +5,9 @@ import React, { useState, useEffect, useRef } from 'react'
 //Includes
 import './imageCarousel.css';
 
+//Image imports
+import Dreamscapes1 from './images/Dreamscapes/1.png';
+
 function ImageCarousel(props) {
 
   const projects = props.projects;

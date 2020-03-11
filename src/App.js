@@ -44,9 +44,9 @@ function App() {
 }
 
 function setupData() {
-  var dreamscapesPath = '/Images/Dreamscapes/';
-  var nameSayerPath = '/Images/NameSayer/';
-  var tweetoPath = '/Images/Tweeto/';
+  var dreamscapesPath = './images/Dreamscapes/';
+  var nameSayerPath = './images/NameSayer/';
+  var tweetoPath = './images/Tweeto/';
 
   var dreamscapesImages = Array.from(new Array(7),(val,index)=> dreamscapesPath + (index + 1) + ".png" );
   var nameSayerImages = Array.from(new Array(8),(val,index)=> nameSayerPath + (index + 1) + ".jpg" );
