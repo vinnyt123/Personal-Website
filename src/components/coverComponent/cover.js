@@ -2,11 +2,12 @@ import React from 'react';
 
 //Includes
 import './cover.css';
+import cover from './cover.jpg';
 
 function Cover() {
   return (
     <div>
-    <img src="/Images/cover.jpg" className="backgroundImage"></img>
+    <img src={cover} className="backgroundImage"></img>
     <h1 className="nameText">Vinny Tunnell</h1>
     </div>
   );

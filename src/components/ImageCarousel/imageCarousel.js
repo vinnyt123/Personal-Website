@@ -9,6 +9,7 @@ import './imageCarousel.css';
 
 //Image imports
 import imageLoader from './images'
+import dreamscapesSnip from './images/dreamscapesSnip.png';
 
 function ImageCarousel(props) {
 
@@ -63,7 +64,7 @@ function ImageCarousel(props) {
       
       <div className='projectsHeader'>
         <a className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(0)}>Tweeto</a>
-        <a style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(4)}><img className="dreamscapesSnip" src="/Images/dreamscapesSnip.PNG" /></a>
+        <a style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(4)}><img className="dreamscapesSnip" src={dreamscapesSnip} /></a>
         <a style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(11)}>NameSayer</a>
       </div>
 
