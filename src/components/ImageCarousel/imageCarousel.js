@@ -81,7 +81,7 @@ function ImageCarousel(props) {
         index={index}
       >
         {images.map(image => (
-          <GalleryImage objectFit="contain" key={image} src={image} />
+          <GalleryImage objectFit="contain" key={image} src={Dreamscapes1} />
         ))
         
         }
