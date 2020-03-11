@@ -6,11 +6,11 @@ import React, { useState, useEffect, useRef } from 'react'
 import './imageCarousel.css';
 
 //Image imports
-import Dreamscapes1 from './images/Dreamscapes/1.png';
+import imageLoader from './images'
 
 function ImageCarousel(props) {
 
-  const projects = props.projects;
+  const projects = imageLoader();
   console.log("meosn");
 
   var images = [];
@@ -81,7 +81,7 @@ function ImageCarousel(props) {
         index={index}
       >
         {images.map(image => (
-          <GalleryImage objectFit="contain" key={image} src={Dreamscapes1} />
+          <GalleryImage objectFit="contain" key={image} src={image} />
         ))
         
         }
