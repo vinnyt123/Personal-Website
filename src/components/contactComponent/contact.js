@@ -33,7 +33,7 @@ function Contact() {
                 </div>
 
                 <div className="iconsWrapper" style={{marginBottom: 15}}>
-                    <a href={'/resume.pdf'} target="_blank">
+                    <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank">
                         <div className="textAndIcon">
                             <IosDocument fontSize="120px" color="rgba(14,85,183,1)" />
                         </div>
