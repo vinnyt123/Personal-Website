@@ -13,6 +13,8 @@ import dreamscapesSnip from './images/dreamscapesSnip.png';
 
 function ImageCarousel(props) {
 
+  const topOfProjectsRef = useRef(null);
+
   const projects = imageLoader();
   console.log("meosn");
 
@@ -36,6 +38,7 @@ function ImageCarousel(props) {
     setIndex(i);
     setColor(project.color);
     setText(project.text);
+    window.scrollTo({top: topOfProjectsRef.current.offsetTop, behavior: 'smooth'});
   }
 
   
@@ -61,11 +64,11 @@ function ImageCarousel(props) {
   return (
     
     <div className='projectsWrapper'>
-      
+      <div className="divider" ref={topOfProjectsRef}>Projects</div>
       <div className='projectsHeader'>
         <a className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(0)}>Tweeto</a>
         <a style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(4)}><img className="dreamscapesSnip" src={dreamscapesSnip} /></a>
-        <a style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(11)}>NameSayer</a>
+        <a style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(9 )}>NameSayer</a>
       </div>
 
       <div ref={ref} className='projectDescription' style={{background: color}}>
