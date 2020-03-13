@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "24095fc248f8c2345563b7279efd065e",
+    "revision": "c473a5166879ff8454aa3806d12a59ff",
     "url": "/Personal-Website/index.html"
   },
   {
-    "revision": "a1360d916eeec84dfbff",
-    "url": "/Personal-Website/static/css/main.ee44ad94.chunk.css"
+    "revision": "c9146653822380bc9df2",
+    "url": "/Personal-Website/static/css/main.62dbd41d.chunk.css"
   },
   {
-    "revision": "8e058a99ba54ed9b18f3",
-    "url": "/Personal-Website/static/js/2.53e01016.chunk.js"
+    "revision": "72ad269d73bb00905033",
+    "url": "/Personal-Website/static/js/2.24a6878f.chunk.js"
   },
   {
-    "revision": "a1360d916eeec84dfbff",
-    "url": "/Personal-Website/static/js/main.6ed2da5b.chunk.js"
+    "revision": "c9146653822380bc9df2",
+    "url": "/Personal-Website/static/js/main.6d4de6ed.chunk.js"
   },
   {
     "revision": "b729f76a5e7e4f32ca6a",
@@ -70,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9406d0ab606cf8cb91c41b65556bd836",
     "url": "/Personal-Website/static/media/Lobster-Regular.9406d0ab.ttf"
-  },
-  {
-    "revision": "ff848b69c6e64ec65ad64f3dd809e05f",
-    "url": "/Personal-Website/static/media/Vinny Tunnell CV Maxtel.ff848b69.pdf"
   },
   {
     "revision": "f80b98d560e7104296d7a5b6eebc3794",
