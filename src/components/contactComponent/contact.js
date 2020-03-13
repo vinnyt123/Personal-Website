@@ -10,7 +10,7 @@ import LogoLinkedin from 'react-ionicons/lib/LogoLinkedin'
 import IosDocument from 'react-ionicons/lib/IosDocument'
 
 function Contact() {
-    const { windowHeight, windowWidth } = useWindowDimensions();
+    const { windowWidth } = useWindowDimensions();
 
     if (windowWidth > 680) {
         return (
@@ -33,12 +33,12 @@ function Contact() {
                 </div>
 
                 <div className="iconsWrapper" style={{marginBottom: 15}}>
-                    <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank">
+                    <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <IosDocument fontSize="120px" color="rgba(14,85,183,1)" />
                         </div>
                     </a>
-                    <a href="https://github.com/vinnyt123" target="_blank">
+                    <a href="https://github.com/vinnyt123" target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <LogoGithub fontSize="120px" color="rgba(14,85,183,1)"/>
                         </div>
@@ -48,7 +48,7 @@ function Contact() {
                             <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank">
+                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
                         </div>   
@@ -72,12 +72,12 @@ function Contact() {
                 </div>
 
                 <div className="iconsWrapper">
-                    <a href="https://github.com/vinnyt123" target="_blank">
+                    <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <IosDocument fontSize="120px" color="rgba(14,85,183,1)" />
                         </div>
                     </a>
-                    <a href="https://github.com/vinnyt123" target="_blank">
+                    <a href="https://github.com/vinnyt123" target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <LogoGithub fontSize="120px" color="rgba(14,85,183,1)"/>
                         </div>
@@ -99,7 +99,7 @@ function Contact() {
                             <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank">
+                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
                         </div>   

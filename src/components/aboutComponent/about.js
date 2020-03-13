@@ -5,7 +5,7 @@ import useWindowDimensions from '../../index.js'
 import './about.css';
 
 function About() {
-  const { windowHeight, windowWidth } = useWindowDimensions();
+  const { windowWidth } = useWindowDimensions();
   var layout = "flexBoi";
   var noMargin = {};
   var bottomPad = {};
@@ -46,7 +46,7 @@ function About() {
           <h4>Location</h4>
           <p>Living in New Zealand (but also looking for graduate roles in Australia)</p>
           <h4>Work Experience and Skills</h4>
-          <p className="link">See my CV here</p>
+          <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank" className="link" rel="noopener noreferrer">See my CV here</a>
         </div> 
       </div>
     </div> 

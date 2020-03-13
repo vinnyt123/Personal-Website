@@ -1,6 +1,7 @@
 import { Gallery, GalleryImage } from "react-gesture-gallery";
 import useWindowDimensions from '../../index.js'
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 //Includes
 import './imageCarousel.css';
@@ -57,7 +58,7 @@ function ImageCarousel(props) {
 
   useEffect(() => {
     setHeight(ref.current.clientHeight)
-  })
+  },[])
 
   console.log(height);
 
@@ -68,9 +69,9 @@ function ImageCarousel(props) {
     <div className='projectsWrapper'>
       <div className="divider" ref={topOfProjectsRef}>Projects</div>
       <div className='projectsHeader'>
-        <a className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(0)}>Tweeto</a>
-        <a style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(4)}><img className="dreamscapesSnip" src={dreamscapesSnip} /></a>
-        <a style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(9 )}>NameSayer</a>
+        <Link className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(0)}>Tweeto</Link>
+        <Link style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(4)}><img alt="dreamscapesButton" className="dreamscapesSnip" src={dreamscapesSnip} /></Link>
+        <Link style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(9 )}>NameSayer</Link>
       </div>
 
       <div ref={ref} className='projectDescription' style={{background: color}}>

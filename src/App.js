@@ -2,18 +2,13 @@ import React from 'react';
 
 //Includes
 import './assets/app.css';
-import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
-//import pic from './assets/Images/Dreamscapes/1.png';
-//HeaderImages
-//import dreamscapesHeader from "./assets/Images/Dreamscapes";
-//import '..\\public\\Images\\Tweeto\\1.PNG';
+import {BrowserRouter as Router} from 'react-router-dom';
+
 
 
 //Components
-import Header from './components/headerComponent/header';
 import ImageCarousel from './components/ImageCarousel/imageCarousel';
 import Cover from './components/coverComponent/cover';
-import Divider from './components/dividerComponent/divider';
 import About from './components/aboutComponent/about';
 import Contact from './components/contactComponent/contact';
 
