@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from 'react'
 //Includes
 import './imageCarousel.css';
 
-
+import smoothscroll from 'smoothscroll-polyfill';
 
 //Image imports
 import imageLoader from './images'
@@ -13,6 +13,8 @@ import dreamscapesSnip from './images/dreamscapesSnip.png';
 
 function ImageCarousel(props) {
 
+
+  smoothscroll.polyfill();
   const topOfProjectsRef = useRef(null);
 
   const projects = imageLoader();
