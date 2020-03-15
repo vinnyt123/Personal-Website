@@ -19,7 +19,6 @@ function ImageCarousel(props) {
   const topOfProjectsRef = useRef(null);
 
   const projects = imageLoader();
-  console.log("meosn");
 
   var images = [];
   for (var j = projects.length - 1; j >= 0; j--) {
@@ -50,8 +49,6 @@ function ImageCarousel(props) {
   const [text, setText] = React.useState(projects[0].text);
 
   const { windowHeight, windowWidth } = useWindowDimensions();
-  console.log(windowHeight);
-  console.log(windowWidth);
 
   const [height, setHeight] = useState(0)
   const ref = useRef(null)
@@ -60,7 +57,6 @@ function ImageCarousel(props) {
     setHeight(ref.current.clientHeight);
   })
   remainingHeight = windowHeight - height - 50 - 61 - 10;
-  console.log("meow" + remainingHeight);
 
   return (
     
