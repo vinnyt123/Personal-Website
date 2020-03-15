@@ -55,14 +55,12 @@ function ImageCarousel(props) {
 
   const [height, setHeight] = useState(0)
   const ref = useRef(null)
-
+  var remainingHeight;
   useEffect(() => {
-    setHeight(ref.current.clientHeight)
-  },[])
-
-  console.log(height);
-
-  const remainingHeight = windowHeight - height - 50 - 61 - 10;
+    setHeight(ref.current.clientHeight);
+  })
+  remainingHeight = windowHeight - height - 50 - 61 - 10;
+  console.log("meow" + remainingHeight);
 
   return (
     
