@@ -1,5 +1,11 @@
 body {
-    background-color: #fafafa;
+    --background-color: #fafafa;
+    --divider-background: white;
+    --divider-text: black;
+    --color: black;
+    --divider-border: rgb(219,219,219);
+    color: var(--color);
+    background-color: var(--background-color);
     margin: 0;
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -19,24 +25,17 @@ button {
     display: inline-block
 }
 
-.App {
-    
-}
-
 .divider {
+  
     height: 60px;
     line-height: 55px;
     font-size: 45px;
     text-align: center;
     font-weight: normal;
-    color: black;
-    /* background-color: #1e2224; */
-    background-color: white;
-    /* margin-top: 3px; */
-    /* margin-bottom: 3px; */
-    /* #357370 */
-    border-bottom: 1px solid rgb(219,219,219);
-    border-top: 1px solid rgb(219,219,219);
+    color: var(--divider-text);
+    background-color: var(--divider-background);
+    border-bottom: 1px solid var(--divider-border);
+    border-top: 1px solid var(--divider-border);
 }
 
 h4 {

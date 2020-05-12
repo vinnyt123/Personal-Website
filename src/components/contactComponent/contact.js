@@ -48,7 +48,7 @@ function Contact() {
                             <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/vinny-tunnell-14aa34162/" target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
                         </div>   
@@ -99,7 +99,7 @@ function Contact() {
                             <MdMail fontSize="120px" color="rgba(14,85,183,1)"/>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/vincent-tunnell-14aa34162/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/vinny-tunnell-14aa34162/" target="_blank" rel="noopener noreferrer">
                         <div className="textAndIcon">
                             <LogoLinkedin fontSize="120px" color="rgba(14,85,183,1)" />
                         </div>   

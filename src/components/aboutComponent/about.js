@@ -40,7 +40,7 @@ function About() {
         <div className="aboutMe" style={bottomPad}>
           <h2>Details</h2>
           <h4>Name</h4>
-          <p>Vincent (Vinny) Tunnell</p>
+          <p>Vinny Tunnell</p>
           <h4>Tertiary Education</h4>
           <p>Bachelor of Engineering (Honours) in Software Engineering at the University of Auckland </p>
           <h4>Location</h4>

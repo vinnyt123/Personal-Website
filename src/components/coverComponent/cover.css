@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    display: block;
+    
 }
 
 .nameText {
@@ -15,3 +15,28 @@
     bottom: 50px;
     margin: 0;
 }
+
+.flipButton {
+    background-color: var(--color);
+    color: var(--divider-background);
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+	border: none;
+	padding: 10px;
+	font: inherit;
+	cursor: pointer;
+    font-weight: bold;
+}
+
+.saturate {
+    -webkit-animation: saturate 3s infinite;
+}
+  
+@-webkit-keyframes saturate {
+    0%, 100%  { -webkit-filter: saturate(none); }
+    50% { -webkit-filter: saturate(10); }
+}
+  
+
