@@ -60,7 +60,7 @@ function ImageCarousel(props) {
 
   return (
     
-    <div className='projectsWrapper'>
+    <div className='projectsWrapper' id="projectsSection" ref={props.projectsRef}>
       <div className="divider" ref={topOfProjectsRef}>Projects</div>
       <div className='projectsHeader'>
         <Link className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(0)}>Tweeto</Link>

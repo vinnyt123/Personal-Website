@@ -15,7 +15,7 @@ function About() {
     bottomPad = {paddingBottom: 15, paddingTop: 15};
   }
   return (
-    <div className="wrapper">
+    <div className="wrapper" id="profileSection" >
 
       <p className="italicsBoi">I'm a young software engineer</p>
       
