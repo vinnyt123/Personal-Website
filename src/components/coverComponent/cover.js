@@ -37,7 +37,7 @@ function Cover() {
         <button className="flipButton" onClick={flip}>Switch to dark theme</button>
       </div>
 
-      <div>
+      <div id ="darkcover">
         <img alt="cover" src={coverDark} className="backgroundImage saturate"></img>
         <button className="flipButton" onClick={flip}>Switch to light theme</button>
       </div>
