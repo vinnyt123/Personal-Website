@@ -12,6 +12,7 @@ import Cover from './components/coverComponent/cover';
 import About from './components/aboutComponent/about';
 import Contact from './components/contactComponent/contact';
 import ScrollTo from './components/scrollToComponent/scrollTo';
+import Democrify from './components/democrifyComponent/democrify';
 
 function App() {
 
@@ -26,7 +27,9 @@ function App() {
         <Cover/>
         <div className="divider" ref={topOfAboutRef}>Profile</div>
         <About aboutRef={topOfAboutRef}/>
-        <ImageCarousel isAuthed={true} projectsRef={topOfProjectsRef}/>
+        <div className="divider" ref={topOfProjectsRef}>Projects</div>
+        <Democrify/>
+        <ImageCarousel isAuthed={true}/>
         <div className="divider">Contact</div>
         <Contact/>
         <ScrollTo aboutRef={topOfAboutRef} projectsRef={topOfProjectsRef}/>

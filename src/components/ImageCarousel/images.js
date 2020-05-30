@@ -30,6 +30,12 @@ function imageLoader() {
   
     const projects = [
       {
+        name: "NameSayer",
+        text: nameSayerTxt,
+        color: "#157766",
+        images: nameSayerImages
+      },
+      {
         name: "Tweeto",
         text: tweetoTxt,
         color: "rgba(14,85,183,0.85)",
@@ -40,12 +46,6 @@ function imageLoader() {
         text: dreamscapesTxt,
         color: "#0d1122",
         images: dreamscapesImages
-      },
-      {
-        name: "NameSayer",
-        text: nameSayerTxt,
-        color: "#157766",
-        images: nameSayerImages
       }
     ]
   

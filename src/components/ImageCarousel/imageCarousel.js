@@ -14,9 +14,9 @@ import dreamscapesSnip from './images/dreamscapesSnip.png';
 
 function ImageCarousel(props) {
 
+  const topOfImageViewerRef = useRef(null);
 
   smoothscroll.polyfill();
-  const topOfProjectsRef = useRef(null);
 
   const projects = imageLoader();
 
@@ -40,7 +40,7 @@ function ImageCarousel(props) {
     setIndex(i);
     setColor(project.color);
     setText(project.text);
-    window.scrollTo({top: topOfProjectsRef.current.offsetTop, behavior: 'smooth'});
+    window.scrollTo({top: topOfImageViewerRef.current.offsetTop, behavior: 'smooth'});
   }
 
   
@@ -56,16 +56,15 @@ function ImageCarousel(props) {
   useEffect(() => {
     setHeight(ref.current.clientHeight);
   })
-  remainingHeight = windowHeight - height - 50 - 61 - 10;
+  remainingHeight = windowHeight - height - 50 - 10;
 
   return (
     
-    <div className='projectsWrapper' id="projectsSection" ref={props.projectsRef}>
-      <div className="divider" ref={topOfProjectsRef}>Projects</div>
+    <div className='projectsWrapper' id="projectsSection" ref={topOfImageViewerRef}>
       <div className='projectsHeader'>
-        <Link className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(0)}>Tweeto</Link>
-        <Link style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(4)}><img alt="dreamscapesButton" className="dreamscapesSnip" src={dreamscapesSnip} /></Link>
-        <Link style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(9 )}>NameSayer</Link>
+        <Link style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(0)}>NameSayer</Link>
+        <Link className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(3)}>Tweeto</Link>
+        <Link style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(7)}><img alt="dreamscapesButton" className="dreamscapesSnip" src={dreamscapesSnip} /></Link>
       </div>
 
       <div ref={ref} className='projectDescription' style={{background: color}}>
