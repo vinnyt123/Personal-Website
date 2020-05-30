@@ -4,6 +4,7 @@ body {
     --divider-text: black;
     --color: black;
     --divider-border: rgb(219,219,219);
+    --democrifyImage: '';
     color: var(--color);
     background-color: var(--background-color);
     margin: 0;

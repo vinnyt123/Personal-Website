@@ -6,14 +6,14 @@ import './cover.css';
 import coverLight from './cover-light.jpg';
 import coverDark from './cover-dark.jpg';
 
-function Cover() {
+function Cover(props) {
 
   
-  const [isFlipped, setFlip] = useState(0);
+  
   const [imgLoaded, setImgLoaded] = useState(0);
 
   function flip() {
-    if(!isFlipped) {
+    if(!props.isFlipped) {
       document.body.style.setProperty('--background-color', '#0f141a');
       document.body.style.setProperty('--divider-background', 'black');
       document.body.style.setProperty('--divider-text', 'white');
@@ -26,19 +26,23 @@ function Cover() {
       document.body.style.setProperty('--color', 'black');
       document.body.style.setProperty('--divider-border', 'rgb(219,219,219)');
     }
-    setFlip(!isFlipped);
+    props.setFlip(!props.isFlipped);
+  }
+
+  function onLoad() {
+    setImgLoaded(true);
   }
 
   return (
     <div>
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+    <ReactCardFlip isFlipped={props.isFlipped} flipDirection="horizontal">
       <div id="lightcover">
-        <img alt="cover" src={coverLight} className="backgroundImage"></img>
+        <img alt="cover" src={coverLight} className="backgroundImage" onLoad={onLoad}></img>
         <button className="flipButton" onClick={flip}>Switch to dark theme</button>
       </div>
 
       <div id ="darkcover">
-        <img alt="cover" src={coverDark} className="backgroundImage saturate"></img>
+        {imgLoaded && <img alt="cover" src={coverDark} className="backgroundImage saturate"></img>}
         <button className="flipButton" onClick={flip}>Switch to light theme</button>
       </div>
     </ReactCardFlip>

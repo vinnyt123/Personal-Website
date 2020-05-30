@@ -18,17 +18,18 @@ function App() {
 
   const topOfAboutRef = useRef(null);
   const topOfProjectsRef = useRef(null);
+  const [isFlipped, setFlip] = useState(0);
 
   return (
     
     <Router>
 
       <div className="App">
-        <Cover/>
+        <Cover isFlipped={isFlipped} setFlip={setFlip}/>
         <div className="divider" ref={topOfAboutRef}>Profile</div>
         <About aboutRef={topOfAboutRef}/>
         <div className="divider" ref={topOfProjectsRef}>Projects</div>
-        <Democrify/>
+        <Democrify isFlipped={isFlipped}/>
         <ImageCarousel isAuthed={true}/>
         <div className="divider">Contact</div>
         <Contact/>
