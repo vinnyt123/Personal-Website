@@ -12,7 +12,7 @@
     font-weight: normal;
     width: 100%;
     position: absolute;
-    bottom: 100px;
+    bottom: 140px;
     margin: 0;
 }
 
@@ -23,7 +23,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10px;
+    bottom: 70px;
 	border: none;
 	padding: 10px;
 	font: inherit;
@@ -34,12 +34,12 @@
 }
 
 .saturate {
-    -webkit-animation: saturate 3s infinite;
+    -webkit-animation: saturate 4s infinite;
 }
   
 @-webkit-keyframes saturate {
     0%, 100%  { -webkit-filter: saturate(none); }
-    50% { -webkit-filter: saturate(8); }
+    50% { -webkit-filter: saturate(4); }
 }
   
 #lightcover, #darkcover {

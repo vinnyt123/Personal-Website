@@ -10,6 +10,7 @@ function Cover() {
 
   
   const [isFlipped, setFlip] = useState(0);
+  const [imgLoaded, setImgLoaded] = useState(0);
 
   function flip() {
     if(!isFlipped) {
@@ -32,7 +33,7 @@ function Cover() {
     <div>
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div id="lightcover">
-        <img alt="cover" src={coverLight} className="backgroundImage" ></img>
+        <img alt="cover" src={coverLight} className="backgroundImage"></img>
         <button className="flipButton" onClick={flip}>Switch to dark theme</button>
       </div>
 
