@@ -19,7 +19,7 @@ function Contact() {
 
                 <div style={{marginTop: 15}}className="iconsWrapper">
                     <div className="textAndIcon">
-                        <p>Download my CV</p>
+                        <p>View my CV</p>
                     </div>
                     <div className="textAndIcon">
                         <p>View my projects</p>

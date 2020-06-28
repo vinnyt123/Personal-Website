@@ -39,7 +39,7 @@
   
 @-webkit-keyframes saturate {
     0%, 100%  { -webkit-filter: saturate(none); }
-    50% { -webkit-filter: saturate(4); }
+    50% { -webkit-filter: saturate(2); }
 }
   
 #lightcover, #darkcover {

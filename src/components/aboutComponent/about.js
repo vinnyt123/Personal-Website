@@ -17,7 +17,7 @@ function About() {
   return (
     <div className="wrapper" id="profileSection" >
 
-      <p className="italicsBoi">I'm a young software engineer</p>
+      <p className="italicsBoi">I'm a software engineer</p>
       
       <div className={layout}>
         <div className="aboutMe">
