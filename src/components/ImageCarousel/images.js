@@ -26,7 +26,7 @@ function imageLoader() {
   
     var nameSayerTxt = "Namesayer is a JavaFX application used to practice pronunciation of unfamiliar names. The application loads in audio files of people saying the names, then cleans up the audio using ffmpeg commands called via the bash shell for linux. Features include the ability to combine multiple names into a single name, the creation of playlists and a theme store.";
   
-    var dreamscapesTxt = "Dreamscapes is a platformer game made using JavaFX. CSS was used to style the menus. Open source images and sprite sheets were used to create the maps and characters. Some open source sound effects were also utilized. High scores are serialized into a .ser file and loaded on application start so they are persistent.";
+    var dreamscapesTxt = "Dreamscapes is a platformer game developed with JavaFX. CSS was used to style the menus. Open source images and sprite sheets were used to create the maps and characters. Some open source sound effects were also utilized. High scores are serialized into a .ser file and loaded on application start so they are persistent.";
   
     const projects = [
       {
