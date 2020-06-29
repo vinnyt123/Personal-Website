@@ -35,12 +35,14 @@ function ImageCarousel(props) {
     }
   }
 
-  function changeImage(i) {
+  function changeImage(i, fromInterval) {
     var project = getProjectFromI(i);
     setIndex(i);
     setColor(project.color);
     setText(project.text);
-    window.scrollTo({top: topOfImageViewerRef.current.offsetTop, behavior: 'smooth'});
+    if (!fromInterval) {
+      window.scrollTo({top: topOfImageViewerRef.current.offsetTop, behavior: 'smooth'});
+    }
   }
 
   
@@ -55,16 +57,24 @@ function ImageCarousel(props) {
   var remainingHeight;
   useEffect(() => {
     setHeight(ref.current.clientHeight);
+    const interval = setInterval(nextImage,7000);
+    return () => clearInterval(interval)
   })
   remainingHeight = windowHeight - height - 50 - 10;
+
+  function nextImage() {
+    changeImage((index + 1) % images.length, true);
+  }
+
+  
 
   return (
     
     <div className='projectsWrapper' id="projectsSection" ref={topOfImageViewerRef}>
       <div className='projectsHeader'>
-        <Link style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(0)}>NameSayer</Link>
-        <Link className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(3)}>Tweeto</Link>
-        <Link style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(7)}><img alt="dreamscapesButton" className="dreamscapesSnip" src={dreamscapesSnip} /></Link>
+        <Link style={{background: "#157766", color: "white", fontSize: '22px', fontWeight: 'normal'}} onClick={() => changeImage(0, false)}>NameSayer</Link>
+        <Link className="tweetoText" style={{background: "rgba(14,85,183,0.85)", color: "white"}} onClick={() => changeImage(3, false)}>Tweeto</Link>
+        <Link style={{background: "#0d1122", color: "white"}} onClick={() => changeImage(7, false)}><img alt="dreamscapesButton" className="dreamscapesSnip" src={dreamscapesSnip} /></Link>
       </div>
 
       <div ref={ref} className='projectDescription' style={{background: color}}>
@@ -72,7 +82,7 @@ function ImageCarousel(props) {
       </div>
       <Gallery className='projectsGallery'
         onRequestChange={i => {   
-          changeImage(i);
+          changeImage(i, false);
       }}
         style={{
           background: color,

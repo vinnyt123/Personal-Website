@@ -9,7 +9,8 @@ import useWindowDimensions from '../../index.js'
 function Democrify(props) {
     const { windowWidth } = useWindowDimensions();
     const logoWidth = windowWidth < 850 ? '100%' : '70%';
-    const playerWidth = windowWidth < 850 ? '100%' : '50%'
+    const playerWidth = windowWidth < 850 ? '100%' : '50%';
+    const bottomMargin = windowWidth < 850 ? '20px' : '40px';
     return (
         <div>
             <div style={{textAlign:'center', width: '90%', paddingTop: '20px', paddingBottom: '20px', color: 'var(--color)', paddingLeft:'5%', paddingRight:'5%'}}>
@@ -18,9 +19,9 @@ function Democrify(props) {
                 <Button variant="contained" className="tryDemocrify" onClick={() => window.open("https://democrify-party.herokuapp.com/", '_blank')}>Try it in the browser!</Button>
                 <div style={{fontWeight: 'bold', fontSize: 50, marginBottom: 20}}>OR</div>
                 <p style={{fontWeight: 'bold', marginBottom: "10px"}}>Watch a demo video of Democrify</p>
-                <div style={{width: playerWidth, position: 'relative', margin: 0, display:'inline-block'}}>
+                <div style={{width: playerWidth, position: 'relative', margin: 0, display:'inline-block', marginBottom:bottomMargin}}>
                     <div className="aspectRatioWrapper" style={{paddingTop: '56.25%', height: 0}}>
-                        <ReactPlayer style={{position: 'absolute', top: 0}} width='100%' height='100%' url="https://www.youtube.com/watch?v=Pa5Bcv-t9_c"/>
+                        <ReactPlayer style={{position: 'absolute', top: 0}} width='100%' height='100%' url="https://youtu.be/01gNYk85Wt8"/>
                     </div>
                 </div>
             </div>    
