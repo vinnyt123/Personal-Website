@@ -1,6 +1,6 @@
 import selectextLogo from './assets/images/selectext-logo-cropped.png'
 import democrifyLogoDark from './assets/images/democrify.svg'
-import democrifyLogoLight from './assets/images/democrify_white.svg'
+import democrifyLogoLight from './assets/images/democrify-white.svg'
 import namesayer1 from './assets/images/namesayer1.png'
 import namesayer2 from './assets/images/namesayer2.png'
 import namesayer3 from './assets/images/namesayer3.png'
