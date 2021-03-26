@@ -34,19 +34,21 @@ function Cover(props) {
   }
 
   return (
-    <div>
+    <div className={"coverWrapper"}>
     <ReactCardFlip isFlipped={props.isFlipped} flipDirection="horizontal">
       <div id="lightcover">
-        <img alt="cover" src={coverLight} className="backgroundImage" onLoad={onLoad}></img>
+        <img alt="cover" src={coverLight} className="backgroundImage saturate" onLoad={onLoad} />
         <button className="flipButton" onClick={flip}>Switch to dark theme</button>
       </div>
 
       <div id ="darkcover">
-        {imgLoaded && <img alt="cover" src={coverDark} className="backgroundImage saturate"></img>}
+        {imgLoaded && <img alt="cover" src={coverDark} className="backgroundImage saturate" />}
         <button className="flipButton" onClick={flip}>Switch to light theme</button>
       </div>
+
     </ReactCardFlip>
     <h1 className="nameText">Vinny Tunnell</h1>
+
     </div>
   );
 }

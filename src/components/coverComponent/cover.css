@@ -2,7 +2,6 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    
 }
 
 .nameText {
@@ -23,7 +22,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 70px;
+    bottom: 20px;
 	border: none;
 	padding: 10px;
 	font: inherit;
@@ -38,10 +37,14 @@
 }
   
 @-webkit-keyframes saturate {
-    0%, 100%  { -webkit-filter: saturate(none); }
+    0%, 100%  { -webkit-filter: saturate(0); }
     50% { -webkit-filter: saturate(2); }
 }
   
 #lightcover, #darkcover {
     display: flex;
+}
+
+.coverWrapper {
+    position: relative;
 }

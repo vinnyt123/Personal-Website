@@ -20,15 +20,13 @@ function About() {
         <div className="aboutMe">
           <h2>About Me</h2>
 
-          <p>An aspiring software engineer currently pursuing a BE (Hons) in Software
-          Engineering at the University of Auckland.
+          <p>A software engineer passionate about building high quality software that makes a difference.
           </p>
 
           <p>Eager to learn about and work with new technologies and the people who develop them.
           </p>
 
-          <p>I am in my fourth and final year of my degree, and am looking for a graduate role for 2021. I would also be interested in part time
-            work throughout 2020.
+          <p>I graduated from the University of Auckland at the end of 2020 and am looking for a graduate role for 2022.
           </p>
 
           <p style = {noMargin}>I am open to working in a wide variety of software related fields.
@@ -39,7 +37,7 @@ function About() {
           <h4>Name</h4>
           <p>Vinny Tunnell</p>
           <h4>Tertiary Education</h4>
-          <p>Bachelor of Engineering (Honours) in Software Engineering at the University of Auckland </p>
+          <p>Bachelor of Engineering (First Class Honours) in Software Engineering at the University of Auckland </p>
           <h4>Location</h4>
           <p>Living in New Zealand (but also looking for graduate roles in Australia)</p>
           <h4>Work Experience and Skills</h4>
