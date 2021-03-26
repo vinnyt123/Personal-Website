@@ -23,13 +23,13 @@ function About() {
           <p>A software engineer passionate about building high quality software that makes a difference.
           </p>
 
-          <p>Eager to learn about and work with new technologies and the people who develop them.
+          <p>I graduated from the University of Auckland at the end of 2020 and am currently working as a Data Engineer at Quantiful.
           </p>
 
-          <p>I graduated from the University of Auckland at the end of 2020 and am looking for a graduate role for 2022.
+          <p style = {noMargin}>I love to learn new tech, and I am open to working in a wide variety of software related fields.
           </p>
 
-          <p style = {noMargin}>I am open to working in a wide variety of software related fields.
+          <p style = {noMargin}>This website is built with React, and showcases some of my personal projects.
           </p>
         </div> 
         <div className="aboutMe" style={bottomPad}>
@@ -39,7 +39,7 @@ function About() {
           <h4>Tertiary Education</h4>
           <p>Bachelor of Engineering (First Class Honours) in Software Engineering at the University of Auckland </p>
           <h4>Location</h4>
-          <p>Living in New Zealand (but also looking for graduate roles in Australia)</p>
+          <p>Living in New Zealand (but open to roles in Australia)</p>
           <h4>Work Experience and Skills</h4>
           <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank" className="link" rel="noopener noreferrer">See my CV here</a>
         </div> 
