@@ -3,13 +3,10 @@ import ReactCardFlip from 'react-card-flip';
 
 //Includes
 import './cover.css';
-import coverLight from './cover-light.jpg';
-import coverDark from './cover-dark.jpg';
+import coverLight from '../../assets/images/cover-light.jpg';
+import coverDark from '../../assets/images/cover-dark.jpg';
 
 function Cover(props) {
-
-  
-  
   const [imgLoaded, setImgLoaded] = useState(0);
 
   function flip() {

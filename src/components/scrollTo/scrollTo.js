@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 
 import './scrollTo.css'
@@ -19,13 +19,20 @@ class ScrollTo extends Component {
     }
 
     componentDidMount() {
-        this.state.divsArray = [0, this.props.aboutRef, this.props.projectsRef, document.body.scrollHeight]
+        this.setState({
+                divsArray: [0, this.props.aboutRef, this.props.projectsRef, this.props.bottomRef]
+            }
+        )
     }
     
     scroll() {
-        this.state.position = (this.state.position + 1) % 4;
+        this.setState(
+            {
+                position: (this.state.position + 1) % 4
+            }
+        )
         const div = this.state.divsArray[this.state.position];
-        if (div != undefined && div.current != null) {
+        if (div !== undefined && div.current != null) {
             window.scrollTo({top: div.current.offsetTop, behavior: 'smooth'});
         } else {
             //window.scrollTo({top: div, behavior: 'smooth'});
@@ -34,8 +41,6 @@ class ScrollTo extends Component {
     }
 
     render() {
-
-        
         return (
             <button className="scrollDown" onClick={this.scroll}>↓</button>
         );

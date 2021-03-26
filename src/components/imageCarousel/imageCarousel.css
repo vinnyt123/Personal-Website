@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Lobster';
-    src: local('Lobster'), url(./Lobster-Regular.ttf) format('truetype');
-}
-
-.tweetoText {
-    font-family: 'Lobster';
-    font-size: 30px;
-}
-
 .projectsHeader {
     height: 50px;
 }
