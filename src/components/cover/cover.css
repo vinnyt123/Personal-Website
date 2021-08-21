@@ -20,8 +20,6 @@
     color: black;
     border-radius: 5px;
     position: absolute;
-    left: 0;
-    right: 0;
     bottom: 20px;
 	border: none;
 	padding: 10px;
@@ -43,6 +41,7 @@
   
 #lightcover, #darkcover {
     display: flex;
+    justify-content: center;
 }
 
 .coverWrapper {

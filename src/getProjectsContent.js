@@ -11,24 +11,25 @@ export default function getProjectsContent() {
 
 function selectext() {
     const description = [
-        "Chrome/Firefox extension for copying text directly from Youtube videos and UoA lecture recordings",
-        "Written in Javascript/JQuery, HTML, CSS. Google Cloud Vision API for text detection",
-        "1500+ users on the chrome web store"
+        "Chrome/Firefox extension for copying text directly from Youtube videos.",
+        "1500+ users on the chrome web store.",
+        "Frontend built with Javascript/Jquery, HTML and CSS",
+        "Backend built with NodeJS and a range of AWS and GCP services.",
     ]
 
     const buttons = [
         {
-            "text": "Get it on Chrome",
-            "link": "https://chrome.google.com/webstore/detail/selectext-copy-text-from/gkkdmjjodidppndkbkhhknakbeflbomf?hl=en",
+            "text": "Website",
+            "link": "https//selectext.app",
             "cssClass": "selectextGreen"
         },
         {
-            "text": "Get it on Firefox",
-            "link": "https://addons.mozilla.org/en-US/firefox/addon/selectext",
+            "text": "Technologies diagram",
+            "link": "https//selectext.app/technologies.pdf",
             "cssClass": "selectextGreen"
         },
         {
-            "text": "View code on GitFront",
+            "text": "Extension code on GitFront",
             "link": "https://gitfront.io/r/user-1609342/e8cf63274b5dfe7d2c862f892d508dcccc9b5f23/selectext/",
             "cssClass": "githubBlack"
         },
