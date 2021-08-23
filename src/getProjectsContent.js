@@ -20,12 +20,12 @@ function selectext() {
     const buttons = [
         {
             "text": "Website",
-            "link": "https//selectext.app",
+            "link": "https://selectext.app",
             "cssClass": "selectextGreen"
         },
         {
             "text": "Technologies diagram",
-            "link": "https//selectext.app/technologies.pdf",
+            "link": "https://selectext.app/technologies.pdf",
             "cssClass": "selectextGreen"
         },
         {
